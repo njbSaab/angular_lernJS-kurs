@@ -1,0 +1,17 @@
+<p>form works!</p>
+<input [formControl]="nameControl">
+<br><br>
+
+<fieldset [formGroup] = "fullNameControl">
+  <input formControlName="firstName">
+  <input formControlName="lastName">
+</fieldset>
+
+
+<form [formGroup]="userListControl">
+  <ul formArrayName="users">
+    <li>
+      <input>
+    </li>
+  </ul>
+</form>
